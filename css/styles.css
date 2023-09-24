@@ -73,9 +73,9 @@ h5.h6 {
   gap: 40px;
 }
 .header-menu-item {
-  padding: 24px 0;
 }
 .header-menu-link {
+  padding: 24px 0;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
@@ -244,8 +244,6 @@ feachers-container {
   padding-bottom: 120px;
 }
 .portfolio-container {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .portfolio-title {
   color: #2e2f42;
@@ -266,10 +264,7 @@ feachers-container {
   border: 1px solid #e7e9fc;
 }
 .portfolio-item {
-  display: flex;
   width: calc((100% - 48px) / 3);
-  align-items: flex-start;
-  flex-shrink: 0;
 }
 .portfolio-img {
   background: url(<path-to-image>),
@@ -302,8 +297,7 @@ feachers-container {
   padding-bottom: 100px;
   background-color: #2e2f42;
 }
-.footer-container {
-}
+
 .footer-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -313,7 +307,8 @@ feachers-container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-a .footer-logo {
+
+.footer-container a {
   display: inline-block;
   margin-bottom: 16px;
   padding-top: 1.5px;
@@ -321,11 +316,11 @@ a .footer-logo {
   flex-direction: column;
   justify-content: center;
 }
+
 .footer-logo-white {
   color: #f4f4fd;
 }
-a .footer-logo {
-}
+
 .footer-text {
   color: #f4f4fd;
   line-height: 1.5;
