@@ -263,7 +263,10 @@ feachers-container {
   row-gap: 48px;
   border: 1px solid #e7e9fc;
 }
-.portfolio-item {
+.portfolio-list .portfolio-item {
+  background: #ffffff;
+  border: 1px solid #e7e9fc;
+  max-width: 360px;
   width: calc((100% - 48px) / 3);
 }
 .portfolio-img {
@@ -302,8 +305,12 @@ feachers-container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  /*flex-direction: column;
+  justify-content: center;*/
 }
-.logo-container {
+.logo-container .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -313,12 +320,6 @@ feachers-container {
   text-transform: uppercase;
   padding-top: 1.5px;
   width: 71px;
-  /*flex-direction: column;
-  justify-content: center;*/
-}
-div a {
-  display: inline-block;
-  margin-bottom: 16px;
 }
 
 .footer-logo-white {
