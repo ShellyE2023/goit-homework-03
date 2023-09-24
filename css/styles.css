@@ -303,7 +303,7 @@ feachers-container {
   margin: 0 auto;
   padding: 0 15px;
 }
-.footer-logo {
+.logo-container a {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
