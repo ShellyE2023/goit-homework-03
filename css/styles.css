@@ -38,20 +38,21 @@ h5.h6 {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0;
-  padding-left: 156px;
-  padding-right: 156px;
-
-  outline: 2px solid red;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /*=================HEDER================*/
 .header {
   border-bottom: 1px solid #e7e9fc;
   background: #fff;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-container {
+  display: flex;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -62,9 +63,17 @@ h5.h6 {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .header-logo-black {
   color: #2e2f42;
+}
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+}
+.header-menu-item {
+  padding: 24px 0;
 }
 .header-menu-link {
   color: #2e2f42;
@@ -79,6 +88,12 @@ h5.h6 {
 }
 address {
   font-style: normal;
+}
+.header-address-list {
+  padding: 24px 0;
+  display: flex;
+  gap: 40px;
+  margin-left: 332px;
 }
 .header-address-link {
   color: #434455;
@@ -98,7 +113,6 @@ address {
   padding-bottom: 188px;
 }
 .hero-container {
-  padding: ;
 }
 .hero-title {
   color: #fff;
@@ -110,8 +124,7 @@ address {
   letter-spacing: 0.02em;
   width: 100%;
   max-width: 496px;
-  padding-left: 472;
-  padding-right: 472p;
+  margin: 0 auto;
   margin-bottom: 48px;
 }
 .btn-hero {
@@ -125,7 +138,11 @@ address {
   background-color: #4d5ae5;
   cursor: pointer;
   padding: 16px 32px;
+  min-width: 169px;
+  display: block;
   margin: 0 auto;
+  border: none;
+  border-radius: 4px;
 }
 .btn-hero:hover,
 .btn-hero:focus {
@@ -133,11 +150,30 @@ address {
 }
 /*=============FEACHERS===========*/
 .feachers {
-  padding: 120px;
+  padding: 120px 0;
 }
 feachers-container {
-  ga: 24px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.feachers-list {
+  display: flex;
+  gap: 24px;
+}
+.feachers-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .feachers-subtitle {
   color: #2e2f42;
   font-size: 20px;
@@ -159,8 +195,8 @@ feachers-container {
   background-color: #f4f4fd;
 }
 .team-container {
-  padding-left: 156px;
-  padding-right: 156px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .team-title {
   color: #2e2f42;
@@ -170,15 +206,18 @@ feachers-container {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-left: 639px;
-  padding-right: 639px;
   margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-item {
   background-color: #ffffff;
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
+
 .team-img {
 }
 .name-container {
@@ -205,6 +244,8 @@ feachers-container {
   padding-bottom: 120px;
 }
 .portfolio-container {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .portfolio-title {
   color: #2e2f42;
@@ -214,8 +255,7 @@ feachers-container {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-left: 611px;
-  scroll-padding-right: 611px;
+  margin: 0 auto;
   margin-bottom: 72px;
 }
 .portfolio-list {
@@ -227,10 +267,8 @@ feachers-container {
 }
 .portfolio-item {
   display: flex;
-  flex-basis: calc((100%-24px * 2) / 3);
-  flex-direction: column;
+  width: calc((100% - 48px) / 3);
   align-items: flex-start;
-  gap: 32px;
   flex-shrink: 0;
 }
 .portfolio-img {
@@ -240,6 +278,7 @@ feachers-container {
 .portfolio-container-text {
   background: #ffffff;
   border: 1px solid #e7e9fc;
+  border-top: none;
   padding: 32px 16px;
 }
 
@@ -264,7 +303,6 @@ feachers-container {
   background-color: #2e2f42;
 }
 .footer-container {
-  width: ;
 }
 .footer-logo {
   color: #4d5ae5;
@@ -275,10 +313,10 @@ feachers-container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.logo-container {
-  margin-bottom: 17.5px;
+a .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   padding-top: 1.5px;
-  display: flex;
   width: 71px;
   flex-direction: column;
   justify-content: center;
@@ -286,7 +324,8 @@ feachers-container {
 .footer-logo-white {
   color: #f4f4fd;
 }
-
+a .footer-logo {
+}
 .footer-text {
   color: #f4f4fd;
   line-height: 1.5;
